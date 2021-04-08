@@ -18,10 +18,10 @@ import logging
 
 from .components._config import get_language_config
 from .core import TEXT_FORM_NORMALIZED, TEXT_FORM_PROCESSED, TEXT_FORM_RAW, Query
-from .stemmers import get_language_stemmer
+from .text_processing.stemmers import get_language_stemmer
 from .system_entity_recognizer import (DucklingRecognizer, NoOpSystemEntityRecognizer,
                                        SystemEntityRecognizer)
-from .tokenizer import Tokenizer
+from .text_processing.tokenizer import Tokenizer
 
 logger = logging.getLogger(__name__)
 

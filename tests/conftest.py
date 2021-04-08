@@ -16,13 +16,14 @@ import warnings
 
 import pytest
 
-from mindmeld.components import NaturalLanguageProcessor, Preprocessor, QuestionAnswerer
+from mindmeld.components import NaturalLanguageProcessor, QuestionAnswerer
+from mindmeld.text_processing.preprocessor import Preprocessor
 from mindmeld.components._elasticsearch_helpers import create_es_client
 from mindmeld.query_factory import QueryFactory
 from mindmeld.resource_loader import ResourceLoader
-from mindmeld.stemmers import EnglishNLTKStemmer
+from mindmeld.text_processing.stemmers import EnglishNLTKStemmer
 from mindmeld.system_entity_recognizer import DucklingRecognizer
-from mindmeld.tokenizer import Tokenizer
+from mindmeld.text_processing.tokenizers import Tokenizer
 from mindmeld.converter.rasa import RasaConverter
 from mindmeld.converter.dialogflow import DialogflowConverter
 

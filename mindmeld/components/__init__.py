@@ -15,7 +15,6 @@
 from .dialogue import Conversation, DialogueManager, DialogueResponder
 from .entity_resolver import EntityResolver
 from .nlp import NaturalLanguageProcessor
-from .preprocessor import Preprocessor
 from .question_answerer import QuestionAnswerer
 from .request import Request
 from .custom_action import (
@@ -24,6 +23,7 @@ from .custom_action import (
     invoke_custom_action,
     invoke_custom_action_async,
 )
+from ..text_processing.preprocessor import Preprocessor
 
 __all__ = [
     "Conversation",
